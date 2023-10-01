@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link href="style.css" rel="stylesheet" >
+    <title>Document</title>
+</head>
+<body>
+    <!--Navigation Bar-->
+    <header class="sticky">
+        <a href="#" class="logo"><img src="image/logo.png"></a>
+        <ul class="nav">
+            <li><a href="#home">Home</a></li >
+            <li><a href="#about">About</a></li >
+            <li><a href="#game">Game</a></li >
+            <li><a href="#news">News</a></li >
+            <li><a href="#contact-us">Contact Us</a></li>
+            <li><a href="#">Submit Game</a></li>
+        </ul>
+        <div class="toggleMenu" onclick="toggleMenu();"></div>
+    </header>
+
+    <!--Home Banner-->
+    <section class="banner" id="home">
+        <div class="container">
+            <h1 class="bannerSubtitle">God Of Wars</h1>
+            <div class="btnGroup">
+                <button class="btn btn-primary">
+                    <span>Purchase</span>
+                    <button class="btn btn-primary">Detail</button>
+            </button>
+            </div>
+        </div>
+    </section>
+
+    <!--About Us-->
+    <div class="about animeX" id="about">
+        <div class="contentBox">
+            <h2>About Us</h2>
+            <p>Established in 2018 and based in the tropical region of Singapore & Malaysia,
+                SCRYsoft sets out on an adventure to bring games from all over the world to our gamers in Asia. 
+                We may be in the first chapter of our journey , but we make it up by having a decade worth of experience as a video game distributor in South East Asia. 
+                With a vast market knowledge on hand, SCRYsoft is also the first licensed publisher based in South East Asia to be granted physical production for the PlayStation®4.  
+                At SCRYsoft, we value our gamers' experience more than any other thing else.  
+            </p>
+            <a href="#">Contact Us</a>
+        </div>
+        <img src="image/logo.png" alt="">
+    </div>
+    
+    <!--game zone-->
+    <!--<div class="games">
+        <h2>Games List</h2>
+        <div class="cardBox">
+            <div class="card" data-item="pc">
+                <img src="image/gameImage.jpg" alt="">
+                <div class="content">
+                    <h4>Game Name</h4>
+                    <div class="info">
+                        <a href="#">More Info</a>
+                        <a href="#">Purchase</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="console">
+                <img src="image/gameImage.jpg" alt="">
+                <div class="content">
+                    <h4>Game Name 1</h4>
+                    <div class="info">
+                        <a href="#">More Info</a>
+                        <a href="#">Purchase</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="pc">
+                <img src="image/gameImage.jpg" alt="">
+                <div class="content">
+                    <h4>Game Name 2</h4>
+                    <div class="info">
+                        <a href="#">More Info</a>
+                        <a href="#">Purchase</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="console">
+                <img src="image/gameImage.jpg" alt="">
+                <div class="content">
+                    <h4>Game Name 3</h4>
+                    <div class="info">
+                        <a href="#">More Info</a>
+                        <a href="#">Purchase</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-item="pc">
+                <img src="image/gameImage.jpg" alt="">
+                <div class="content">
+                    <h4>Game Name 4</h4>
+                    <div class="info">
+                        <a href="#">More Info</a>
+                        <a href="#">Purchase</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>-->
+
+    <div class="games animeX" id="game">
+        <h1>Games List</h1>
+        <div class="cardBox">
+        <div class="card2">
+            <img src="image/gameImage.jpg" alt="">
+            <div class="info2">
+                <h4>Games Name</h4>
+                <a href="">purchase</a>
+                <a href="">purchase</a>
+            </div>
+        </div>
+
+        <div class="card2">
+            <img src="image/gameImage.jpg" alt="">
+            <div class="info2">
+                <h4>Games Name</h4>
+                <a href="">purchase</a>
+                <a href="">purchase</a>
+            </div>
+        </div>
+
+        <div class="card2">
+            <img src="image/gameImage.jpg" alt="">
+            <div class="info2">
+                <h4>Games Name</h4>
+                <a href="">purchase</a>
+                <a href="">purchase</a>
+            </div>
+        </div>
+
+        <div class="card2">
+            <img src="image/gameImage.jpg" alt="">
+            <div class="info2">
+                <h4>Games Name</h4>
+                <a href="">purchase</a>
+                <a href="">purchase</a>
+            </div>
+        </div>
+        <div class="card2">
+            <img src="image/gameImage.jpg" alt="">
+            <div class="info2">
+                <h4>Games Name</h4>
+                <a href="">purchase</a>
+                <a href="">purchase</a>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <section class="news animeX" id="news">
+        <div class="container">
+            <h1 class="section-title">
+                New and Headline
+            </h1>
+            <ul class="news-list">
+                <li data-reveal="bottom">
+                    <div class="news-card">
+                        <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                            <img src="/image/gameImage.jpg" width="600" height="400" alt="" class="img-cover">
+                            <a href="#" class="card-tag">News Category</a>
+                        </figure>
+                        <div class="card-content">
+                            
+                            <ul class="card-meta-list">
+                                <li class="card-meta-item">
+                                    <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+                                    <time class="card-meta-text" datetime="2023-09-01">Sep 01 2023</time>
+                                </li>
+
+                                <li class="card-meta-item">
+                                    <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+                                    <p class="card-meta-text">LEE KAH HIN</p>
+                                </li>
+                            </ul>
+
+                            <h3 class="h3">
+                                <a href="#" class="card-title">News Title</a>
+                            </h3>
+
+                            <p class="card-text">
+                                
+Different free writing compositions are used to inform various target audiences. They can be find in almost any source, which includes print media and online sources. With the advancement of modern technology, such sources have become more easier to access by the day.    
+                            </p>
+                            <a href="#" class="link has-before">
+                                Read More
+                            </a>
+                        </div>
+                    </div>
+                </li>
+
+                <li data-reveal="bottom">
+                    <div class="news-card">
+                        <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                            <img src="/image/gameImage.jpg" width="600" height="400" alt="" class="img-cover">
+                            <a href="#" class="card-tag">News Category</a>
+                        </figure>
+                        <div class="card-content">
+                            
+                            <ul class="card-meta-list">
+                                <li class="card-meta-item">
+                                    <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+                                    <time class="card-meta-text" datetime="2023-09-01">Sep 01 2023</time>
+                                </li>
+
+                                <li class="card-meta-item">
+                                    <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+                                    <p class="card-meta-text">LEE KAH HIN</p>
+                                </li>
+                            </ul>
+
+                            <h3 class="h3">
+                                <a href="#" class="card-title">News Title</a>
+                            </h3>
+
+                            <p class="card-text">
+                                
+Different free writing compositions are used to inform various target audiences. They can be find in almost any source, which includes print media and online sources. With the advancement of modern technology, such sources have become more easier to access by the day.    
+                            </p>
+                            <a href="#" class="link has-before">
+                                Read More
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li data-reveal="bottom">
+                    <div class="news-card">
+                        <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                            <img src="/image/gameImage.jpg" width="600" height="400" alt="" class="img-cover">
+                            <a href="#" class="card-tag">News Category</a>
+                        </figure>
+                        <div class="card-content">
+                            <ul class="card-meta-list">
+                                <li class="card-meta-item">
+                                    <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+                                    <time class="card-meta-text" datetime="2023-09-01">Sep 01 2023</time>
+                                </li>
+
+                                <li class="card-meta-item">
+                                    <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+                                    <p class="card-meta-text">LEE KAH HIN</p>
+                                </li>
+                            </ul>
+
+                            <h3 class="h3">
+                                <a href="#" class="card-title">News Title</a>
+                            </h3>
+
+                            <p class="card-text">
+                                
+Different free writing compositions are used to inform various target audiences. They can be find in almost any source, which includes print media and online sources. With the advancement of modern technology, such sources have become more easier to access by the day.    
+                            </p>
+                            <a href="#" class="link has-before">
+                                Read More
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li data-reveal="bottom">
+                    <div class="news-card">
+                        <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                            <img src="/image/gameImage.jpg" width="600" height="400" alt="" class="img-cover">
+                            <a href="#" class="card-tag">News Category</a>
+                        </figure>
+                        <div class="card-content">
+                            <ul class="card-meta-list">
+                                <li class="card-meta-item">
+                                    <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+                                    <time class="card-meta-text" datetime="2023-09-01">Sep 01 2023</time>
+                                </li>
+
+                                <li class="card-meta-item">
+                                    <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+                                    <p class="card-meta-text">LEE KAH HIN</p>
+                                </li>
+                            </ul>
+
+                            <h3 class="h3">
+                                <a href="#" class="card-title">News Title</a>
+                            </h3>
+
+                            <p class="card-text">
+                                
+Different free writing compositions are used to inform various target audiences. They can be find in almost any source, which includes print media and online sources. With the advancement of modern technology, such sources have become more easier to access by the day.    
+                            </p>
+                            <a href="#" class="link has-before">
+                                Read More
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                
+            </ul>
+        </div>
+    </section>
+
+    <section class="contact animeX" id="contact-us">
+        <div class="content">
+            <h2>Contact Us</h2>
+            <p>
+                Talk to us!<br>
+                Regardless for business opportunities or marketing inquiries,
+                We will be sure to take a look and reply as soon as we can!
+            </p>
+        </div>
+        <div class="contact-container">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon"><ion-icon name="location-outline"></ion-icon></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>Johor, Kulai</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><ion-icon name="location-outline"></ion-icon></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>123-456789</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><ion-icon name="mail-outline"></ion-icon></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>person123@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactForm">
+                    <form>
+                        <h2>Send Message</h2>
+                        <div class="inputBox">
+                            <input type="text" name="" required="required" placeholder="Name">
+                        </div>
+                        <div class="inputBox">
+                            <input type="email" name="" required="required" placeholder="Email">
+                        </div>
+                        <div class="inputBox">
+                            <input type="text" name="" required="required" placeholder="Subject">
+                        </div>
+                        <div class="inputBox">
+                            <textarea required="required" placeholder="Type your message here..."></textarea>
+                        </div>
+                        <div class="inputBox">
+                            <input type="submit" name="" value="submit">
+                        </div>
+                    </form>
+                </div>
+        </div>
+    </section>
+
+    <!--footer-->
+    <footer>
+        <div class="info">
+            <a href="#" class="logo"><img src="image/logo.png" alt=""></a>
+            <p>©2022 SCRYsoft. All Rights Reserved.</p>
+            <ul>
+                <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-youtube"></ion-icon></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-----------------------------------javascript function------------------>
+    <!--sticky navigation bar-->
+    <script>
+        window.addEventListener('scroll', function(){
+            var header = document.querySelector('header');
+            header.classList.toggle.add('sticky',window.scrollY > 0);
+        });
+
+    /*respomsive navigation bar*/
+    function toggleMenu(){
+        const toggleMenu = document.querySelector('.toggleMenu');
+        const nav = document.querySelector('.nav');
+        toggleMenu.classList.toggle('active');
+        nav.classList.toggle('active');
+    }
+
+    /*scrolling animation effect*/
+    window.addEventListener('scroll',function(){
+        var anime = document.querySelectorAll('.animeX')
+
+        for(var s=0; s<anime.length; s++){
+            var windowHeight = window.innerHeight;
+            var animeTop = anime[s].getBoundingClientRect().top;
+            var animePoint = 150;
+
+            if(animeTop < windowHeight - animePoint){
+                anime[s].classList.add('active');
+            }
+            else{
+                anime[s].classList.add('remove');
+            }
+        }
+    })
+
+    </script>
+</body>
+</html>

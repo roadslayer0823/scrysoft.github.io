@@ -1,0 +1,783 @@
+@import url('https://fonts.googleapis.com/css?family=Michroma');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Michroma', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: black;
+    
+}
+/*scroll bar*/
+::-webkit-scrollbar{
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: lightgray;
+    border-radius: 6px;
+}
+
+/*NAVIGATION BAR*/
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 7px 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    transition: 0.5;
+    z-index: 1000;
+}
+
+.sticky{
+    filter: invert(100%) sepia(2%) saturate(7483%) hue-rotate(203deg) brightness(128%) contrast(93%);
+    box-shadow: 0 5px 20px black;
+}
+
+header .logo{
+    position: relative;
+}
+
+.logo img{
+    width: 200px;
+    margin-right: 10px;
+}
+
+header .nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    list-style: none;
+    margin: 10px;
+    padding-top: 15px;
+}
+
+header ul li a{
+    color: black;
+    position: relative;
+    text-decoration: none;
+    padding: 20px 5px;
+    border-radius: 5px;
+}
+
+header ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: black;
+    justify-content: center;
+    margin: auto;
+    display: block;
+}
+
+header ul li a:hover::after{
+    width: 100%;
+    transition: width 0.3s linear;
+}
+
+/*Home Banner*/
+.banner{
+    background: url("image/banner.png") no-repeat;
+    background-size: cover;
+    background-position: top center;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+    text-align: center;
+}
+
+.bannerSubtitle{
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 12px;
+    margin-bottom: 15px;
+}
+
+.btn{
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin: 10px;
+    padding: 13px 10px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: 1s;
+    
+}
+
+.btnGroup{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-primary{
+    background: black;
+}
+
+.btn-primary:is(:hover){
+    background-color: white;
+    color: black;
+}
+
+.btn-link:is(:hover){
+    color: grey;
+}
+
+.container{
+    padding-inline: 15px;
+}
+
+/*About Us*/
+.about{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about img{
+    filter: invert(100%) sepia(2%) saturate(7483%) hue-rotate(203deg) brightness(128%) contrast(93%);
+}
+
+.about .contentBox{
+    width: 50%;
+    margin: 20px;
+}
+
+.about .contentBox h2{
+    font-size: 3em;
+    font-weight: 700;
+    color: white;
+}
+
+.about .contentBox p{
+    max-width: 600px;
+    text-align: justify;
+    color: white;
+}
+
+.about .contentBox a{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: 1px solid white;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.about .contentBox a:hover{
+    background: white;
+    color: black;
+}
+
+/*Game Zone*/
+.games{
+    padding: 0px 100px;
+    width: 100%;
+    min-height: 140vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px auto;
+    background-color: white;
+}
+
+.games h1{
+    margin: 50px 0;
+}
+
+.games ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.games ul li{
+    list-style: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.games ul li:hover{
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 10px black;
+}
+
+.games ul li .active{
+    background: black;
+    color: white;
+    box-shadow: 0 0 10px black;
+}
+
+.games .cardBox{
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.games .cardBox .card{
+    width: 280px;
+    border-radius: 10px;
+    margin: 20px 40px;
+    background: black;
+    overflow: hidden;
+}
+
+.games .cardBox .card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.games .cardBox .card .content{
+    padding: 10px;
+}
+
+.games .cardBox .card .content h4{
+    color: white;
+    margin: 15px 0;
+}
+
+.games .cardBox .card .info{
+    border-top: 2px solid white;
+    padding: 5px;
+    display: flex;
+    justify-content: space;
+    align-items: center;
+}
+
+.games .cardBox .card .info a{
+    display: inline-block;
+    font-size: 10px;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: 1px solid white;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.games .cardBox .card .info a:hover{
+    background: white;
+    color: black;
+}
+
+.games .cardBox .card .hide{
+    display: none;
+}
+
+/*game version 2*/
+.games .card2{
+    width: 280px;
+	height: 320px;
+    margin-bottom: 30px;
+	border-radius: 15px;
+	background: white;
+    justify-content: center;
+	position: relative;
+	display: flex;
+	align-items: flex-end;
+	transition: 0.4s ease-out;
+	box-shadow: 0px 7px 10px black;
+}
+
+.games .card2:hover{
+    transform: translateY(10px);
+}
+
+.games .card2:hover::before{
+    opacity: 1;
+}
+
+.games .card2:hover .info2{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.games .card2 ::before{
+    content: "";
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(black, 0.6);
+	transition: 0.5s;
+	opacity: 0;
+}
+
+.games .card2 img{
+    width: 100%;
+	height: 100%;
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 15px;
+}
+
+.games .card2 .info2{
+    position: relative;
+    align-items: flex-end;
+    color: white;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.355);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.games .card2 .info2 a{
+    display: inline-block;
+    font-size: 10px;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: 1px solid white;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.games .card2 .info2 a:hover{
+    background: black;
+	color: white;
+}
+
+/*News*/
+.has-before, .has-after{
+    position: relative;
+    z-index: 1;
+}
+
+.has-before::before, .has-after::after{
+    content: "";
+    position: absolute;
+}
+
+.section-title{
+    color: white;
+    font-weight: 1000;
+    margin-block: 100px;
+    text-align: center;
+}
+
+.img-holder{
+    background-color: white;
+    aspect-ratio: var(--width)/var(--height);
+    overflow: hidden;
+}
+
+.img-cover{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.news{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.news-list{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.news-card{
+    width: 600px;
+    text-align: justify;
+	height: 400px;
+    display: flex;
+    margin-bottom: 30px;
+	background: white;
+	position: relative;
+	transition: 0.4s ease-out;
+    background-color: black;
+    color: white;
+}
+
+.news-card .card-content{
+    position: relative;
+    padding: 10px;
+    width: 1000px;
+}
+
+.card-tag{
+    position: relative;
+    font-size: 12px;
+    bottom: 10%;
+    align-items: flex-end;
+    background: rgba(255, 255, 255, 0.8);
+    color: black;
+    text-decoration: none;
+    font-weight: 1000;
+    text-transform: uppercase;
+    line-height: 32px;
+    padding-inline: 20px;
+    clip-path: polygon(0% 0%, 90% 0, 100% 30%, 100% 100%, 0 100%);
+}
+
+.news-card :is(.card-meta-list, .card-meta-item){
+    display: flex;
+    align-items: center;
+}
+
+.news-card .card-meta-list{
+    flex-wrap: wrap;
+    gap: 5px 10px;
+}
+
+.news-card .card-meta-item{
+    gap: 5px;
+}
+
+.news-card .card-meta-item ion-icon{
+    color: white;
+}
+
+.news-card .card-meta-text, .news-card .link{
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.news-card .h3{
+    margin-block: 15px 10px;
+}
+
+.news-card .card-title{
+    display: inline;
+    background-image: linear-gradient(to left, white, gray);
+    padding-bottom: 5px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 0% 4px;
+    color: white;
+    transition: 1s;
+    text-decoration: none;
+}
+
+.news-card .card-title:is(:hover, :focus-visible){
+    background-size: 100% 4px;
+}
+
+.news-card .link{
+    max-width: max-content;
+    margin-block-start: 15px;
+    padding-inline-start: 30px;
+    transition: 1s;
+    text-decoration: none;
+}
+
+.news-card .link::before{
+    top: 50%;
+    left: 0;
+    transform: translateY(100%);
+    width: 20px;
+    height: 4px;
+    background-color: silver;
+}
+
+.news-card .link:is(:hover, :focus-visible){
+    color: silver;
+}
+
+/*Contact Us*/
+.contact{
+    background-color: white;
+    position: relative;
+    min-height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact .content h2{
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.contact .content p{
+    font-weight: 300;
+}
+
+.contact-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.contact-container .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-container .contactInfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.contact-container .contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.contact-container .contactInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.contact-container .contactInfo .box .text h3{
+    font-weight: 500;
+}
+
+.contactForm{
+    width: 50%;
+    padding: 40px;
+}
+
+.contactForm h2{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contactForm .inputBox input, .contactForm .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 12px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    resize: none;
+}
+
+.contactForm .inputBox input[type="submit"]{
+    width: 100px;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.contactForm .inputBox input[type="submit"]:hover{
+    background-color: black;
+    color: white;
+    transition: 1s;
+}
+
+/*footer*/
+footer{
+    padding: 10px 100px;
+}
+
+footer .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .info img{
+    position: relative;
+    filter: invert(100%) sepia(2%) saturate(7483%) hue-rotate(203deg) brightness(128%) contrast(93%);
+}
+
+footer .info p{
+    color: white;
+}
+
+footer .info ul{
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .info ul li{
+    list-style: none;
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .info ul li a ion-icon{
+    font-size: 2em;
+    align-items: center;
+    color: white;
+}
+
+footer .info ul li a ion-icon:hover{
+    color: gray;
+    transition: 1s;
+}
+
+/*scrolling animation*/
+.animeX{
+    position: relative;
+    transform: translateY(150);
+    opacity: 0;
+    transition: all 2s ease;
+}
+.animeX.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+/*responsive design*/
+@media(max-width:991px){
+    header{
+        padding: 15px 40px;
+    }
+    header .nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: black;
+        z-index: 1000;
+    }
+    header .nav.active{
+        display: flex;
+    }
+    header .nav li{
+        margin: 20px 0;
+    }
+    header .nav li a{
+        color: white;
+        margin: 10px 0;
+    }
+    header ul li a::after{
+        background-color: white;
+    }
+    .toggleMenu{
+        position: relative;
+        width: 50px;
+        height: 50px;
+        background: url(image/menu.png);
+        filter: invert(100%) sepia(2%) saturate(7483%) hue-rotate(203deg) brightness(128%) contrast(93%);
+        background-position: center;
+        background-size: 30px;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        z-index: 1001;
+    }
+    .toggleMenu.active{
+        background: url(image/close.png);
+        background-position: center;
+        background-size: 30px;
+        background-repeat: no-repeat;
+    }
+    .banner img{
+        position: absolute;
+    }
+    .banner .container{
+        width: 100%;
+        height: 20%;
+        z-index: 1;
+    }
+    .about{
+        flex-direction: column;
+    }
+    .about .contentBox{
+        width: 100%;
+    }
+    .about img{
+        width: 100%;
+    }
+    .games .cardBox .card2{
+       width: auto;
+    }
+    .contact{
+        padding: 50px;
+    }
+    .contact-container{
+        flex-direction: column;
+    }
+    .contact-container .contactInfo{
+        margin-bottom: 40px;
+    }
+    .contact-container .contactInfo, .contactForm{
+        width: 100%;
+    }
+    footer .info{
+        flex-direction: column;
+    }
+    footer .info p{
+        padding: 10px;
+    }
+}
